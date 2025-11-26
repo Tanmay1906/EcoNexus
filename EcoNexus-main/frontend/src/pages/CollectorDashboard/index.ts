@@ -1,0 +1,7 @@
+export { default as DashboardPage } from './Dashboard'
+export { default as UploadProofPage } from './UploadProof'
+export { default as HistoryPage } from './History'
+export { default as WalletPage } from './Wallet'
+export { default as LeaderboardPage } from './Leaderboard'
+export { default as LearningCenterPage } from './LearningCenter'
+export { default as SupportPage } from './Support'
