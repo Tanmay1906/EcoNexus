@@ -311,6 +311,7 @@ const WhatWeDo = () => {
         <motion.button
           whileHover={{ scale: 1.05, y: -2 }}
           whileTap={{ scale: 0.98 }}
+          onClick={() => window.location.href = '/marketplace'}
           className="group relative inline-flex items-center gap-2 sm:gap-3 rounded-full px-6 sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-5 text-base sm:text-lg font-bold text-white overflow-hidden"
           style={{
             background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.9) 0%, rgba(6, 182, 212, 0.9) 50%, rgba(59, 130, 246, 0.9) 100%)',

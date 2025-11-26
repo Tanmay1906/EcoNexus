@@ -9,10 +9,12 @@ import { CUMELogin } from './pages/Auth/CUMELogin'
 import CUMERegister from './pages/Auth/CUMERegister'
 import Admin from './pages/Dashboard/CUME/Admin'
 import Corporate from './pages/Dashboard/CUME/Corporate'
-import Upcycler from './pages/Dashboard/CUME/Upcycler'
+import UpcyclerDashboard from './pages/Dashboard/CUME/UpcyclerDashboard'
 import RecyclerDashboard from './pages/Dashboard/RC/RecyclerDashboard'
 import ViewProfile from './pages/Profile/ViewProfile'
 import Settings from './pages/Profile/Settings'
+import Marketplace from './pages/Marketplace/Marketplace'
+import Portfolio from './pages/Portfolio/Portfolio'
 import {
   DashboardPage,
   UploadProofPage,
@@ -43,7 +45,6 @@ function App() {
       <Route path="/auth/cume/register" element={<CUMERegister />} />
       <Route path="/dashboard/cume/admin" element={<Admin />} />
       <Route path="/dashboard/cume/corporate" element={<Corporate />} />
-      <Route path="/dashboard/cume/upcycler" element={<Upcycler />} />
       <Route path="/dashboard/rc/collector" element={<DashboardPage />} />
       <Route path="/dashboard/rc/upload" element={<UploadProofPage />} />
       <Route path="/dashboard/rc/history" element={<HistoryPage />} />
@@ -53,6 +54,9 @@ function App() {
       <Route path="/support" element={<SupportPage />} />
       <Route path="/profile" element={<ViewProfile />} />
       <Route path="/settings" element={<Settings />} />
+      <Route path="/marketplace" element={<Marketplace />} />
+      <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/dashboard/cume/upcycler-dashboard" element={<UpcyclerDashboard />} />
       <Route path="/dashboard/rc/recycler-dashboard" element={<RecyclerDashboard />} />
     </Routes>
   )

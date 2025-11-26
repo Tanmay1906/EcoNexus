@@ -43,7 +43,11 @@ export const CUMELogin = () => {
     const expected = MOCK_CREDENTIALS[role]
     if (email.trim() === expected.email && password === expected.password) {
       // Successful (mock) login -> navigate to role dashboard
-      navigate(`/dashboard/cume/${role}`)
+      if (role === 'upcycler') {
+        navigate('/dashboard/cume/upcycler-dashboard')
+      } else {
+        navigate(`/dashboard/cume/${role}`)
+      }
       return
     }
     setError('Invalid credentials for the selected role.')
